@@ -1,0 +1,7 @@
+{
+  "name": "stumanagement",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
