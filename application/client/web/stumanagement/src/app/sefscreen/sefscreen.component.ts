@@ -61,11 +61,5 @@ export class SefscreenComponent implements OnInit {
             this.GpSEFAllValues();
     }
     public GpSEFAllValues(){
-                    this.sefscreenService.GpSEF(this.Id, this.User.email).subscribe(data => {
-                        
-                                this.firstName = data.user.firstname;
- 	 	
-                                this.lastName = data.user.lastname;
-                    });
     }
 }

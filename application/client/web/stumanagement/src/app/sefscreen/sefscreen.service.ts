@@ -12,11 +12,5 @@ export class SefscreenService {
         private sharedService: SharedService,
         private http: HttpClient,
     ) { }
-      GpSEF(Id: any, Mail: any): Observable<any> {
-          let jwt_token = sessionStorage.getItem('JwtToken');
-                                                
- 	 	return this.http.get(this.sharedService.WEB_API + `/systemEntryFeature/userdata/${Id}` + `?jwt_token=${jwt_token}` + `&mailid=${Mail}`);
-
-      }
 
 }
